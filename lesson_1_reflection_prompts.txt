@@ -1,0 +1,89 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+Wy¶wietlenie dwóch wersji pliku u³atwi³o
+mi porównanie wcze¶niejszej wersji pliku
+z now¹ wersj¹ pliku oraz umo¿liwi³o szybkie
+znalezienie b³êdu.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+Mniej czasu spêdza³bym nad szukaniem b³êdów po zmodyfikowaniu kodu.
+Mo¿na ³atwiej wróciæ do starszej dzia³aj¹cej wersji.
+Oprócz tego takie podej¶cie umo¿liwia przetestowanie ró¿nych opcji
+programu, u³atwia przetestowanie ka¿dej z nich i wybranie tej która
+najlepiej siê sprawdzi³a.
+Dodatkowo historia modyfikacji pliku wskazywa³aby na osoby, które
+te zmiany wprowadzi³y, wiêc te¿ u³atwia³aby komunikacjê w projekcie,
+w którym pracowa³bym w zespole.
+
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+Rêczne zapisywanie wersji pliku umo¿liwia zapisywanie ich na podstawie
+w³asnej opinii, czy co¶ powinno byæ ju¿ now¹ wersj¹ czy nie.
+Zasada jest taka, ¿e nowa wersja powinna dotyczyæ jednej rzeczy i byæ
+logiczna, nie za wielka i nie za ma³a. Zbyt czêste zapisywanie, które mo¿e
+siê zdarzyæ w przypadku opcji automatycznej mo¿e spowodowaæ wygenerowanie
+du¿ej liczby wersji, w których nic lub niewiele lub nie wiadomo co konkretnie
+(jaka by³a logika zmiany) siê zmieni³o. Z drugiej strony zapisuj¹c w rêczny
+sposób mo¿emy zapomnieæ wykonaæ zapis istotnych zmian oraz zapisaæ zmiany
+w zbyt du¿ych odstêpach, taki przypadek nie bêdzie mieæ miejsca w przypadku
+automatycznie generowanych wersji.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+W wielu projektach pracuje siê na kilku, kilkunastu plikach.
+Ka¿dy z nich mo¿e byæ zmieniony w danym przedziale czasowym.
+Zapisywanie kopii wszystkich plików przy zapisie jest wygodne i umo¿liwia
+pobranie wszystkich aktualnych wersji plików powi¹zanych ze sob¹, bo
+np. stanowi¹ czê¶ci sk³adowe aplikacji webowej, któr¹ rozwijamy.
+
+Z drugiej strony systemy takie jak Google Docs nie posiadaj± mo¿liwo¶ci
+zapisu wielu plików w jednym commicie, bo z zasady w Google Docs pracuje
+siê nad jednym plikiem w danym czasie i ten plik nie jest w ¿adnym stopniu
+powi¹zany z innymi plikami, wiêc nie ma sensu zapisywaæ zmian we wszystkich
+plikach.
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+Komenda git log pokazuje wszystkie zmiany w danym repozytorium pokazuj¹c
+id commita, datê zmiany oraz krótk¹ notatkê
+opisuj¹c¹ zmianê jaka zosta³a zapisana.
+Na podstawie wyniku dzia³ania tej komendy mo¿na wybraæ dwa ró¿ne id
+nale¿¹ce do dwóch ró¿nych id i sprawdziæ jakie zmiany zasz³y pomiêdzy
+dwoma zapisami plików. Mo¿na zobaczyæ ile linii zosta³o dodanych (rozpoczynaj¹
+siê od znaku minus, a ile linii zosta³o dodanych - te rozpoczynaj¹ siê
+do znaku plus. Warto te¿ uruchomiæ kolorowanie notacji gita, wtedy
+linie dodane bêd¹ wyœwietlaæ siê na zielono, a usuniête na czerwono.
+
+
+How might using version control make you more confident to make changes that
+could break something?
+
+U¿ywanie programu œledz¹cego wersje spowodowa³oby, ¿e nabra³bym wiêkszej
+pewnoœci siebie pisz¹c programy, w razie wyst¹pienia jakiegokolwiek b³êdu
+w ³atwy sposób mogê cofn¹æ siê do wczeœniej dzia³aj¹cej wersji programu
+i sprawdziæ wprowadzone ró¿nice i szybko znaleŸæ b³¹d, który powoduje
+niepoprawne dzia³anie programu.
+
+Oznacza to, ¿e mogê pozwoliæ sobie na wiêksz¹ swobodê w testowaniu i
+próbowaniu ró¿nych pomys³ów bez obaw, ¿e popsujê wczeœniej dzia³aj¹ce wersje
+programu nad którym pracujê. To co jest dobre jest zachowane, a teraz
+nie muszê siê obawiaæ testuj¹c nowe rozwi¹zanie, bo wiem, ¿e i tak mam
+zawsze wybór i w ostatecznoœci gdyby coœ naprawdê posz³o nie tak, to mogê wróciæ
+do punktu wyjœciowego, gdzie wszystko by³o w porz¹dku i zacz¹æ od nowa.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Planujê wykorzystywaæ Git do zapisywania ró¿nych wersji plików,
+np. prezentacji, d³u¿szych mejli oraz do kodowania je¶li siê przydarzy.
+Oczywi¶cie wykorzystam Git do napisania prostej aplikacji do przetestowania
+prostych API na bazie np. RESTa.
+
+
