@@ -22,13 +22,50 @@ nad którymi obecnie pracujê.
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+Mogê wykonaæ wszelkie zmiany na pliku znajduj±cym siê w katalogu.
+Po wprowadzeniu zmian ustawiam go na scenie i porównujê do aktualnie
+zapisanego pliku w repozytorium. Upewniam siê, ¿e nic wiêcej siê nie zmieni³o i ¿e moja zasada wykonywania 1 commitu na jedn± logiczn± zmianê
+jest poprawna. Przecie¿ kto¶ inny móg³ w miêdzyczasie co¶ wpisaæ do repozytorum, kiedy ja pracowa³em nad now± wersj± pliku)
+
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+Funkcjonalno¶æ ga³êzi jest pomocna w sytuacjach, gdy np. chcê przetestowaæ i zakodowaæ testow± funkcjonalno¶æ, a nie chcia³bym popsuæ wersji g³ównej aplikacji, nad któr± kto¶ inny mo¿e aktualnie pracowaæ. Ga³êzie umo¿liwiaj± utworzenie ró¿nych ¶cie¿ek i zapisywaniu zmian w ka¿dej znich oddzielnie, co pozwala korzystaæ w dalszym stopniu z wszystkich funkcjonalno¶ci ga³êzi niezale¿nie od tego na której z nich siê obecnie znajdujê.
+
 How do the diagrams help you visualize the branch structure?
+
+Diagramy pokazuj± ka¿d± z ga³êzi oraz ich odga³êzienia 
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+Rezultatem po³±czenia dwóch ga³êzi razem jest jedna ga³±¼, której commit pokazuje na
+swoich dwóch rodziców, czyli na ostatni commit w ga³êzi pierwszej i ostatni commit w ga³êzi drugiej.
+Diagram jest przedstawiany w taki sposób, aby ³atwo mo¿na by³o zobaczyæ który commit jest rodzicem
+nastêpnego z nich. Je¶li po³±czymy dwie ga³êzie, i wiemy, która z nich jest g³ówna, to mo¿emy usun±æ
+t±, która nie jest g³ówna (robimy merge ga³êzi do ga³êzi na której aktualnie siê znajdujemy). Wtedy
+wszystkie commity z obu ga³êzi bêd± uporz±dkowane wg czasu ich powstania, wiêc mo¿e siê zdarzyæ,
+¿e wcze¶niejszyc commit nie bêdzie rodzicem committa, który po nim nastêpuje. Aby porównaæ zmiany
+jakie zasz³y ze swoim bezpo¶rednim rodzicem nale¿y wykonaæ komendê git show oraz numer commita.
+
+
+
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
+
+Automatyczne ³±czenie plików jest wygodne i mo¿e byæ wykonane w przypadku, gdy
+git wie, które linie powinny byæ na pewno zapisane w nowym wyj¶ciowym pliku.
+Np. w przypadku ³±czenia dwóch plików, git sprawdza, które linie s± wspólne i je 
+kopiuje do pliku wyj¶ciowego, a w przypadku lini, które nie s± jasne porównuje je
+do rodzica obu plików, wtedy mo¿e w ³atwy sposób okre¶liæ, które linie powinny
+byæ usuniête, a które skopiowane do pliku wyj¶ciowego. Taka opcja jest wygodna, natomiast
+nie zawsze jest mo¿liwe automatyczne ³±czenie plików, mog± wyst±piæ sytuacje, ¿e 
+pomimo porównania do rodziców git nie bêdzie wiedzieæ, które linie maj± byæ przepisane
+do pliku wyj¶ciowego. Nie jest mo¿liwe zautomatyzowanie porównañ w takim przypadku,
+bo wymaga³oby to bardzo skomplikowanych algorytmów, natomiast szybciej i pewniej
+decyzjê w takiej sytuacji podejmie programista. Git wy¶wietla 3 wersje do porównania:
+wersjê z pliku pierwszego, linie wspólne dla obu plików oraz na samym dole linie
+z drugiego pliku. Na tej podstawie programista podejmuje decyzjê, które linie
+bêd± ostatecznie zapisane w pliku wyj¶ciowym
+
