@@ -7,3 +7,11 @@ pracujÄ™ nad jakimÅ› otwartym projektem, do ktÃ³rego majÄ… dostÄ™p inni
 programiÅ›ci lub np. gdy chcÄ™ udostÄ™pniÄ‡ mÃ³j plik zespoÅ‚owi, w ktÃ³rym
 pracujemy nad danym zagadnieniem.
 
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+
+Mam wiêksz± kontrolê decyduj±c siê na rêczne pobieranie ostatniej
+aktualnej wersji z GitHuba. Je¶li ten proces przebiega³by w automatyczny
+sposób, to móg³bym byæ zaskoczony zmianami w plikach, które nagle siê
+pojawi³y, bo np. inny programista zaktualizowa³ repozytorium na GitHubie.
+Je¶li zrobiê to w rêczny sposób, to nie bêdê niczym zaskoczony, a ewentualne zmiany sprawdzê wtedy gdy zdecydujê siê na pobranie repozytorium
+z GitHub
