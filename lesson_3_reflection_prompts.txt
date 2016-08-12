@@ -1,2 +1,9 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
+
+Chciałbym wykorzystać zdalne repozytorium, gdy chciałbym udostępnić
+moje pliki innym użytkownikom. Może się to wydarzyć np. wtedy gdy
+pracuję nad jakimś otwartym projektem, do którego mają dostęp inni
+programiści lub np. gdy chcę udostępnić mój plik zespołowi, w którym
+pracujemy nad danym zagadnieniem.
+
