@@ -15,3 +15,14 @@ sposób, to móg³bym byæ zaskoczony zmianami w plikach, które nagle siê
 pojawi³y, bo np. inny programista zaktualizowa³ repozytorium na GitHubie.
 Je¶li zrobiê to w rêczny sposób, to nie bêdê niczym zaskoczony, a ewentualne zmiany sprawdzê wtedy gdy zdecydujê siê na pobranie repozytorium
 z GitHub
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+
+Branches, s± wykorzystywane w lokalnym repozytorium do tworzenia 
+dodatkowych np. eksperymentalnych wersji oprogramowania lub innych wersji.
+Instrukcja clone s³u¿y do klonowania repozytorów ze zdalnych lub lokalnych repozytorów.
+
+Natomiast instrukcja fork to odpowiednik instrukcji clone, przy czym
+klonowane jest repozytorium na GitHubie do innego repozytorium na Githubie. Fork wykonuje siê po to, aby mieæ mo¿liwo¶æ edytowania repozytorium
+jako w³asnego, poniewa¿ u¿ytkownicy zwykle nie zgadzaj± siê na wprowadzanie
+zmian we w³asnych repozytoriach. Dodatkowo fork zachowuje informacjê z którego repozytorium moje nowe repozytorium zosta³o stworzone.
