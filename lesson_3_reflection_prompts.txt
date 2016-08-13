@@ -30,3 +30,13 @@ zmian we w³asnych repozytoriach. Dodatkowo fork zachowuje informacjê z którego r
 What is the benefit of having a copy of the last known state of the remote stored locally?
 
 Dziêki przechowywaniu lokalnie ostatniego stanu zdalnego repozytorium git mo¿e poinformowaæ nas o tym, ¿e zasz³y zmiany i dodatkowo bêddziemy mieli t± informacjê jak nie bêdziemy mieli dostêpu do internetu. Jednak najwa¿niejsze dwie funkcjonalno¶ci, które s± z tym zwi±zane dotycz± rozwi±zywania konfliktów, np. kiedy jednocze¶nie zmiany zasz³y lokalnie i w zdalnym repozytorium, wtedy lokalnie przechowywana wersja zdalnego repozytorium jest ³±czona z now± wersj± z repozytorium githuba przy pomocy instrukcji get fetch, a potem ³±czona z ga³êzi± master przy pomocy polecenia git merge master origin/master. Nie ma potrzeby wykonywania tych dwóch instrukcji, zamiast nich mo¿na to samo osi±gn±æ uruchamiaj±c instrukcjê git pull origin master. Drug± funkcjonalno¶ci± jest w³a¶ciwo¶æ fast foward merges, która polega na przepisaniu nazwy ga³êzi origin/master na najnowsz± wersjê ga³êzi master, ale mo¿e siê to wydarzyæ tylko wtedy, gdy master/origin jest przodkiem obecnej ga³êzi master
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+Bez Gita i Githuba najprawdopodobniej wykorzysytywa³bym inne narzêdzia do zarz±dzania wersjami i ¶ledzenia zmian. Je¶li takie programy nie by³yby
+dostêpne to musieliby¶my ustaliæ sposób oznaczania plików i dodawania komentarzy, przy czym takie rozwi±zanie s³u¿y³oby tylko i wy³±cznie do zapisywania kolejnych wersji, ale nie da³oby siê w ³atwy sposób sprawdziæ co
+konkretnie zosta³o zmienione, co powodowa³oby niepotrzebn± stratê czasu
+nad projektem. Mo¿liwe, ¿e bez Gita zawsze mo¿na wymy¶leæ swoje rozwi±zanie i bardziej je dostosowaæ do danego projektu, ale wygl±da na to, ¿e
+Git znacz±c± przyspiesza pisanie kodu/dokumentacji i wspó³dzielenie jej
+z zespo³em, wiêc raczej w wiêkszo¶ci projektów mo¿e okazaæ siê pomocny.
+
