@@ -26,3 +26,7 @@ Natomiast instrukcja fork to odpowiednik instrukcji clone, przy czym
 klonowane jest repozytorium na GitHubie do innego repozytorium na Githubie. Fork wykonuje siê po to, aby mieæ mo¿liwo¶æ edytowania repozytorium
 jako w³asnego, poniewa¿ u¿ytkownicy zwykle nie zgadzaj± siê na wprowadzanie
 zmian we w³asnych repozytoriach. Dodatkowo fork zachowuje informacjê z którego repozytorium moje nowe repozytorium zosta³o stworzone.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+Dziêki przechowywaniu lokalnie ostatniego stanu zdalnego repozytorium git mo¿e poinformowaæ nas o tym, ¿e zasz³y zmiany i dodatkowo bêddziemy mieli t± informacjê jak nie bêdziemy mieli dostêpu do internetu. Jednak najwa¿niejsze dwie funkcjonalno¶ci, które s± z tym zwi±zane dotycz± rozwi±zywania konfliktów, np. kiedy jednocze¶nie zmiany zasz³y lokalnie i w zdalnym repozytorium, wtedy lokalnie przechowywana wersja zdalnego repozytorium jest ³±czona z now± wersj± z repozytorium githuba przy pomocy instrukcji get fetch, a potem ³±czona z ga³êzi± master przy pomocy polecenia git merge master origin/master. Nie ma potrzeby wykonywania tych dwóch instrukcji, zamiast nich mo¿na to samo osi±gn±æ uruchamiaj±c instrukcjê git pull origin master. Drug± funkcjonalno¶ci± jest w³a¶ciwo¶æ fast foward merges, która polega na przepisaniu nazwy ga³êzi origin/master na najnowsz± wersjê ga³êzi master, ale mo¿e siê to wydarzyæ tylko wtedy, gdy master/origin jest przodkiem obecnej ga³êzi master
