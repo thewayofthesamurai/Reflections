@@ -40,3 +40,12 @@ nad projektem. Mo¿liwe, ¿e bez Gita zawsze mo¿na wymy¶leæ swoje rozwi±zanie i ba
 Git znacz±c± przyspiesza pisanie kodu/dokumentacji i wspó³dzielenie jej
 z zespo³em, wiêc raczej w wiêkszo¶ci projektów mo¿e okazaæ siê pomocny.
 
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+Chcia³bym wykorzystaæ dodatkow± ga³±¿ w sytuacji, gdy pracujê nad funkcjonalno¶ci±, której nie jestem do koñca pewny i chcia³bym, ¿eby inna osoba
+z zespo³u sprawdzi³a mój dzia³aj±cy kod zanim zostanie on po³±czony
+z g³ówn± ga³êzi±. Opcja z dodatkow± ga³êzi± jest bardziej skomplikowana
+tj. trzeba utworzyæ dodatkow± ga³±¼, wys³aæ zmiany do githuba i np.
+wys³aæ do osoby z zespo³u która ma sprawdziæ t± funkcjonalno¶æ pro¶bê
+pull request, która oznacza: "sprawd¼ moje zmiany w tej ga³êzi i potwierd¼, ¿e zmiany s± w porz±dku i po³±cz moje zmiany z ga³êzi± g³ówn±"
+
